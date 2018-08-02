@@ -59,3 +59,7 @@ django-admin.py startproject mysite .
 
 
 python3 manage.py runserver
+
+## Slide0
+
+https://docs.google.com/presentation/d/1MCxTMFrgu4YvZiH_qh69te41gaWZywc5j9fS8d7uG04/edit#slide=id.p
