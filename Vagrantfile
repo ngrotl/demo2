@@ -23,7 +23,7 @@ end
 
 config.vm.define "prod" do |prod|
   prod.vm.hostname = "develop"
-  prod.vm.network "private_network", ip: "192.168.123.11"
+  prod.vm.network "private_network", ip: "192.168.123.33"
   prod.vm.provision "shell", path: "./shell/prod.sh"
 end
 
