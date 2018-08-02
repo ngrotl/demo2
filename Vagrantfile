@@ -16,13 +16,13 @@ config.vm.define "develop" do |develop|
 end
 
 config.vm.define "builder" do |builder|
-  builder.vm.hostname = "develop"
+  builder.vm.hostname = "builder"
   builder.vm.network "private_network", ip: "192.168.123.22"
   builder.vm.provision "shell", path: "./shell/builder.sh"
 end
 
 config.vm.define "prod" do |prod|
-  prod.vm.hostname = "develop"
+  prod.vm.hostname = "prod"
   prod.vm.network "private_network", ip: "192.168.123.33"
   prod.vm.provision "shell", path: "./shell/prod.sh"
 end

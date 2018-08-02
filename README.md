@@ -5,6 +5,7 @@ Strakture as code.
 All you have to do is just:
 
     git clone https://github.com/Kv-042-DevOps/Demo-1
+    cd Demo-1
     vagrant up
 
 (vagrant + VBox should be installed previously)
