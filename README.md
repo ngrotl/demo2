@@ -4,11 +4,12 @@ Project for Demo 1
 Strakture as code.
 All you have to do is just:
 
- git clone https://github.com/Kv-042-DevOps/Demo-1
- vagrant up
+    git clone https://github.com/Kv-042-DevOps/Demo-1
+    vagrant up
 
-(vagrant + VBox shuold be installed previosly)
+(vagrant + VBox should be installed previously)
 
+![Shema](https://raw.githubusercontent.com/Kv-042-DevOps/Demo-1/master/sheme.jpg)
 
 cd ~/Projects
 mkdir mysite
