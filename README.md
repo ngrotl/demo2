@@ -1,6 +1,14 @@
 # Demo-1
 Project for Demo 1
 
+Strakture as code.
+All you have to do is just:
+
+ git clone https://github.com/Kv-042-DevOps/Demo-1
+ vagrant up
+
+(vagrant + VBox shuold be installed previosly)
+
 
 cd ~/Projects
 mkdir mysite
