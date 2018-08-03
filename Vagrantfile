@@ -16,6 +16,8 @@ config.vm.define "develop" do |develop|
 end
 
 config.vm.define "builder" do |builder|
+# This machine gets RPM pakage "demo-1" from github and store it in its repository.
+# Pacage  have to be stored in RPMForLink folder on github
   builder.vm.hostname = "builder"
   builder.vm.network "private_network", ip: "192.168.123.22"
   builder.vm.provision "shell", path: "./shell/builder.sh"
