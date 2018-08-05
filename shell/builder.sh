@@ -4,6 +4,7 @@
 # Preparation
 #sudo yum -y update
 sudo yum -y install createrepo
+sudo yum  -y install git
 sudo curl http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -o epel-release-latest-7.noarch.rpm
 sudo rpm -ivh epel-release-latest-7.noarch.rpm
 sudo yum install -y proftpd openssl proftpd-utils
@@ -18,7 +19,9 @@ sudo openssl req -x509 -nodes -newkey rsa:1024 -subj "/C=UK/ST=Warwickshire/L=Le
 sudo sed -i '1 i\Define TLS' /etc/proftpd.conf
 sudo sed -i '304 i\  TLSOptions NoSessionReuseRequired' /etc/proftpd.conf
 sudo systemctl start proftpd
-
+sudo echo ddddf > /ftpshare/d.txt
+cd ~
+git clone https://github.com/Kv-042-DevOps/Demo-1 
 
 
 exit 0
