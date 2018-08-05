@@ -16,6 +16,7 @@ sudo rm -rf /ftpshare/.*
 sudo chmod -R 770 /ftpshare/
 sudo openssl req -x509 -nodes -newkey rsa:1024 -subj "/C=UK/ST=Warwickshire/L=Leamington/O=OrgName/OU=IT Department/CN=example.com" -keyout /etc/pki/tls/certs/proftpd.pem -out /etc/pki/tls/certs/proftpd.pem
 sudo sed -i '1 i\Define TLS' /etc/proftpd.conf
+sudo sed -i '304 i\  TLSOptions NoSessionReuseRequired' /etc/proftpd.conf
 sudo systemctl start proftpd
 
 
