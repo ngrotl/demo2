@@ -29,14 +29,6 @@ sudo yum -y install python36u
 sudo yum -y install python36u-pip # Install pip, which will manage software packages for Python.
 echo " Python installed"
 
-# Installing dependences for Django & Postgresql.
-
-sudo pip3.6 install virtualenv # Is a tool to create isolated Python environments.
-sudo pip3.6 install Django==2.0.8 # Django install with curren version.
-sudo pip3.6 install psycopg2-binary==2.7.5 # Python-PostgreSQL Database Adapter.
-sudo pip3.6 install pytz==2018.5 # This library allows accurate and cross platform timezone calculations using Python 2.4 or higher.
-echo "Dependences for Django & Postgresql installed"
-
 # Installing Postgresql.
 
 yum -y install yum-utils postgresql-server postgresql-contrib
@@ -51,4 +43,16 @@ su - postgres -c  'psql -c "CREATE DATABASE test_db;"'
 sudo  -u postgres   psql -c "CREATE USER test_user WITH password '12345';"
 su - postgres -c 'psql -c "GRANT ALL privileges ON DATABASE test_db TO test_user;"'
 echo "User created"
+
+# Installing dependences for Django & Postgresql.
+
+sudo pip3.6 install virtualenv # Is a tool to create isolated Python environments.
+virtualenv -p python3 --no-site-packages env
+source ./env
+pip3.6 install Django==2.0.8 # Django install with curren version.
+pip3.6 install psycopg2-binary==2.7.5 # Python-PostgreSQL Database Adapter.
+pip3.6 install pytz==2018.5 # This library allows accurate and cross platform timezone calculations using Python 2.4 or higher.
+deactivate
+echo "Dependences for Django & Postgresql installed"
+
 echo "All tasks are done" (edited)
