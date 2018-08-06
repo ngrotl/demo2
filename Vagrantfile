@@ -12,7 +12,7 @@ config.vm.boot_timeout = 120
 config.vm.define "develop" do |develop|
   develop.vm.hostname = "develop"
   develop.vm.network "private_network", ip: "192.168.123.11"
-  develop.vm.provision "shell", path: "./shell/develop.sh"
+  develop.vm.provision "shell", path: "./shell/environment.sh"
 end
 
 config.vm.define "builder" do |builder|
