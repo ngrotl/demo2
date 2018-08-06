@@ -47,12 +47,12 @@ echo "User created"
 # Installing dependences for Django & Postgresql.
 
 sudo pip3.6 install virtualenv # Is a tool to create isolated Python environments.
-virtualenv -p python3 --no-site-packages env
-source ./env
+virtualenv -p python3 --no-site-packages env # Create virtualenv with python 3 without defaul requirements in new folder "env".
+source ./env # Start vurtualenv.
 pip3.6 install Django==2.0.8 # Django install with curren version.
 pip3.6 install psycopg2-binary==2.7.5 # Python-PostgreSQL Database Adapter.
 pip3.6 install pytz==2018.5 # This library allows accurate and cross platform timezone calculations using Python 2.4 or higher.
-deactivate
+deactivate # Exit virtualenv.
 echo "Dependences for Django & Postgresql installed"
 
 echo "All tasks are done" (edited)
