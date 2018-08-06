@@ -25,8 +25,9 @@ echo "Rpm-build installed"
 
 # Installation python3.6
 sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm # IUS provides Red Hat Package Manager (RPM) packages for some newer versions of select software.
-sudo yum -y install python36u 
-sudo yum -y install python36u-pip # Install pip, which will manage software packages for Python.
+sudo yum -y install python34 python-pip
+
+# Install pip, which will manage software packages for Python.
 echo " Python installed"
 
 # Installing Postgresql.
