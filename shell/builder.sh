@@ -22,6 +22,7 @@ sudo systemctl start proftpd
 sudo echo ddddf > /ftpshare/d.txt
 cd ~
 sudo git clone https://github.com/Kv-042-DevOps/Demo-1 
-
+cp /root/Demo-1/RPMForLink/demo-1-1-1.noarch.rpm /ftpshare
+crontab /root/Demo-1/shell/builder_cron
 
 exit 0
