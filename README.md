@@ -63,3 +63,11 @@ python3 manage.py runserver
 ## Slide0
 
 https://docs.google.com/presentation/d/1MCxTMFrgu4YvZiH_qh69te41gaWZywc5j9fS8d7uG04/edit#slide=id.p
+
+To be frank You can skip wget or git clone steps with one command:
+
+sudo rpm -ivh http://github.com/Kv-042-DevOps/Demo-1/raw/dev/rpmbuild/RPMS/noarch/demo1-dev-init-1-1.el7.centos.noarch.rpm
+
+For example output:
+Retrieving http://github.com/Kv-042-DevOps/Demo-1/raw/dev/rpmbuild/RPMS/noarch/demo1-dev-init-1-1.el7.centos.noarch.rpm
+Preparing...                          ########################################
