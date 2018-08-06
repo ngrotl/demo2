@@ -21,7 +21,7 @@ sudo sed -i '304 i\  TLSOptions NoSessionReuseRequired' /etc/proftpd.conf
 sudo systemctl start proftpd
 sudo echo ddddf > /ftpshare/d.txt
 cd ~
-git clone https://github.com/Kv-042-DevOps/Demo-1 
+sudo git clone https://github.com/Kv-042-DevOps/Demo-1 
 
 
 exit 0
