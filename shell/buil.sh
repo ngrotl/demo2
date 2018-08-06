@@ -4,4 +4,6 @@ mv /root/rpmbuild/BUILDROOT/demo-1-1-1.noarch.rpm /home/vagrant/Demo-1/RPMForLin
 
 cd /home/vagrant/Demo-1/
 
+
+
 git pull && git push -u origun master

@@ -58,7 +58,6 @@ pip3.6 install pytz==2018.5 # This library allows accurate and cross platform ti
 deactivate # Exit virtualenv.
 echo "Dependences for Django & Postgresql installed"
 
-echo "All tasks are done" (edited)
 
 
 curl --ssl-reqd -k  ftp://prod:IAMprod@192.168.123.22:/$name -o $name
