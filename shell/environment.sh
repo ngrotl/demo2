@@ -55,5 +55,5 @@ pip3.6 install psycopg2-binary==2.7.5 # Python-PostgreSQL Database Adapter.
 pip3.6 install pytz==2018.5 # This library allows accurate and cross platform timezone calculations using Python 2.4 or higher.
 deactivate # Exit virtualenv.
 echo "Dependences for Django & Postgresql installed"
-
+sed  's/127.0.0.1\/32            ident/127.0.0.1\/32            md5/g'  /var/lib/pgsql/data/pg_hba.conf -i
 echo "All tasks are done" (edited)
