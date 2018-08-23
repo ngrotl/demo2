@@ -13,7 +13,10 @@ Action
 5. Run 
 
 terraform init
+
 terraform plan
+
 terraform apply
+
 
 Enjoy!
