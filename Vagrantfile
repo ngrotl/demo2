@@ -5,9 +5,13 @@
 
 Vagrant.configure("2") do |config|
   
-config.vm.box = "centos/7"
+config.vm.box = "base"
 config.vm.boot_timeout = 120
 
+#config .vm.define "base" do |base|
+#	base.vm.hostname = "base"
+#	base.vm.network "private_network", ip:"192.168.123.122"
+#end 
 
 config.vm.define "develop" do |develop|
   develop.vm.hostname = "develop"
